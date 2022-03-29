@@ -4,6 +4,7 @@ import AllQuotes from './Pages/AllQuotes';
 import QuoteDetails from './Pages/QuoteDetails';
 import NewQuote from './Pages/NewQuote';
 import Layout from './components/layout/Layout';
+import NotFound from './Pages/NotFound';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           </Route>
           <Route path='/quotes/:quoteId'><QuoteDetails /></Route>
           <Route path='/new-quote'><NewQuote /></Route>
+          <Route path='*'><NotFound/></Route>
         </Switch>
       </Layout>
     </>
